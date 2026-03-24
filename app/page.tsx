@@ -242,10 +242,10 @@ function TerminalDemo() {
             style={{ backgroundColor: "#333333" }}
           >
             <p className="font-mono text-xs" style={{ color: "#888" }}>── #wellread ──</p>
-            <p className="text-white font-semibold">⛏️ Built on prior research!</p>
+            <p className="text-white font-semibold">🪂 Went deeper and faster thanks to prior research!</p>
             <p className="text-zinc-300">- Started ~6K tokens ahead on passkey auth in Next.js</p>
             <p className="text-zinc-300">- Went ~4K tokens further and saved it for whoever comes next</p>
-            <p className="text-zinc-300">- Wellread network saved 2.8 L of water so far</p>
+            <p className="text-zinc-400 italic text-xs">(btw, Wellread network saved 2.8 L of water so far)</p>
           </div>
         </div>
       </div>
