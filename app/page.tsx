@@ -16,7 +16,7 @@ export default function Home() {
             borderColor: "#DADADA",
           }}
         >
-          <span className="opacity-50">#</span>
+          <span className="opacity-100">#</span>
           <span>wellread</span>
         </div>
 
@@ -53,6 +53,9 @@ export default function Home() {
 
         {/* Terminal demo */}
         <TerminalDemo />
+
+        {/* FAQ */}
+        <FAQ />
       </main>
     </div>
   );
@@ -147,6 +150,39 @@ function CheckIcon() {
   );
 }
 
+function FAQ() {
+  const faqs = [
+    {
+      q: "How does it work?",
+      a: "Every time you need to research something — simple or complex — your client searches wellread first. If it finds a match, you start ahead. If not, it researches normally and contributes the result to wellread so others can benefit.",
+    },
+    {
+      q: "Is it compatible with other MCP servers?",
+      a: "100%. If the answer doesn't exist in wellread, your agent will use any other MCP server you have installed as usual. The result will then be contributed to wellread. And if you ever run out of free requests on other services, you can still use the knowledge accumulated in wellread.",
+    },
+    {
+      q: "How much does it cost?",
+      a: "It's free.",
+    },
+  ];
+
+  return (
+    <section className="flex flex-col gap-6 w-full max-w-2xl pt-4">
+      <h2 className="text-xs font-medium uppercase tracking-widest text-zinc-400 text-center">
+        FAQ
+      </h2>
+      <div className="flex flex-col gap-5">
+        {faqs.map((faq, i) => (
+          <div key={i} className="flex flex-col gap-2">
+            <h3 className="text-base font-medium text-zinc-900">{faq.q}</h3>
+            <p className="text-sm leading-relaxed text-zinc-500">{faq.a}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function ToolLogo({ name, src }: { name: string; src: string }) {
   return (
     <div className="flex flex-col items-center gap-2">
@@ -182,7 +218,7 @@ function TerminalDemo() {
           <div className="flex gap-2">
             <span className="font-mono" style={{ color: "#E23067" }}>❯</span>
             <span className="text-white">
-              What does an AI research query cost in tokens?
+              How do I add passkey auth to my Next.js app?
             </span>
           </div>
 
@@ -195,8 +231,8 @@ function TerminalDemo() {
           {/* Abbreviated response */}
           <div className="text-zinc-400 text-sm leading-relaxed">
             <p>
-              Typical query ~22K tokens (2025). Deep Research: 2M+ per session.
-              Perplexity fetches 20–50 sources per query. Water cost: 3.5–39 mL depending on model...
+              Use SimpleWebAuthn with Next.js App Router. Server-side: generateRegistrationOptions +
+              verifyRegistration. Client: startRegistration from @simplewebauthn/browser...
             </p>
           </div>
 
@@ -205,9 +241,11 @@ function TerminalDemo() {
             className="rounded-lg px-4 py-3.5 text-sm leading-relaxed space-y-1"
             style={{ backgroundColor: "#333333" }}
           >
-            <p className="text-white font-semibold">🚀 You just started ~66K tokens ahead</p>
-            <p className="text-zinc-300">📦 17 sources already mapped by previous explorers</p>
-            <p className="text-zinc-300">🌱 Wellread network saved 2.6 L of water in 2d</p>
+            <p className="text-zinc-500 font-mono text-xs">── #wellread ──</p>
+            <p className="text-white font-semibold">🚀 Started ~8K tokens ahead!</p>
+            <p className="text-zinc-300">- Someone already researched passkey auth in Next.js</p>
+            <p className="text-zinc-300">- You skipped ~8K tokens</p>
+            <p className="text-zinc-300">- Wellread network saved 2.8 L of water so far</p>
           </div>
         </div>
       </div>
