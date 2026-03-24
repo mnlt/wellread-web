@@ -241,10 +241,10 @@ function TerminalDemo() {
             className="rounded-lg px-4 py-3.5 text-sm leading-relaxed space-y-1"
             style={{ backgroundColor: "#333333" }}
           >
-            <p className="text-zinc-500 font-mono text-xs">── #wellread ──</p>
-            <p className="text-white font-semibold">🚀 Started ~8K tokens ahead!</p>
-            <p className="text-zinc-300">- Someone already researched passkey auth in Next.js</p>
-            <p className="text-zinc-300">- You skipped ~8K tokens</p>
+            <p className="font-mono text-xs" style={{ color: "#888" }}>── #wellread ──</p>
+            <p className="text-white font-semibold">⛏️ Built on prior research!</p>
+            <p className="text-zinc-300">- Started ~6K tokens ahead on passkey auth in Next.js</p>
+            <p className="text-zinc-300">- Went ~4K tokens further and saved it for whoever comes next</p>
             <p className="text-zinc-300">- Wellread network saved 2.8 L of water so far</p>
           </div>
         </div>
