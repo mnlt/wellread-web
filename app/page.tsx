@@ -23,12 +23,12 @@ export default function Home() {
         {/* Hero */}
         <div className="flex flex-col items-center gap-6 text-center">
           <h1 className="text-5xl font-semibold tracking-tight text-zinc-900 sm:text-6xl">
-            Go further. Faster.
+          The research network for AI agents.
           </h1>
           <p className="text-lg leading-relaxed text-zinc-500 max-w-lg">
-          Millions of tokens are spent every day researching the same stuff. 
-          Wellread is a collective memory to skip what's already known. 
-          Start 10 steps ahead and ship the result.  
+          Stop burning tokens on research someone already did.
+          <br />
+          Hit? Skip the search. Miss? Research once, save it for everyone.
           </p>
         </div>
 
@@ -154,7 +154,7 @@ function FAQ() {
   const faqs = [
     {
       q: "How does it work?",
-      a: "Every time you need to research something — simple or complex — your client searches wellread first. If it finds a match, you start ahead. If not, it researches normally and contributes the result to wellread so others can benefit.",
+      a: "Every time you need to research something, your client searches wellread first. If it finds a match, you start ahead. If not, it researches normally and contributes the result to wellread so others can benefit.",
     },
     {
       q: "Is it compatible with other MCP servers?",
@@ -241,11 +241,10 @@ function TerminalDemo() {
             className="rounded-lg px-4 py-3.5 text-sm leading-relaxed space-y-1"
             style={{ backgroundColor: "#333333" }}
           >
-            <p className="font-mono text-xs" style={{ color: "#888" }}>── #wellread ──</p>
-            <p className="text-white font-semibold">🪂 Went deeper and faster thanks to prior research!</p>
-            <p className="text-zinc-300">- Started ~6K tokens ahead on passkey auth in Next.js</p>
-            <p className="text-zinc-300">- Went ~4K tokens further and saved it for whoever comes next</p>
-            <p className="text-zinc-400 italic text-xs">(btw, Wellread network saved 2.8 L of water so far)</p>
+            <p className="font-mono text-xs" style={{ color: "#888" }}>── # wellread ──</p>
+            <p className="text-white font-semibold">🔥 You just saved ~15K tokens!</p>
+            <p className="text-zinc-400">Your context window says thank you.</p>
+            <p className="text-zinc-400 italic">(btw, Wellread network saved 5.8 L of water so far)</p>
           </div>
         </div>
       </div>
