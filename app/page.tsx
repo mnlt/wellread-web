@@ -56,6 +56,24 @@ export default function Home() {
 
         {/* FAQ */}
         <FAQ />
+
+        {/* Footer */}
+        <footer className="pt-8 pb-4 text-sm text-zinc-400">
+          Built by{" "}
+          <a
+            href="https://www.linkedin.com/in/toledomanuel"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 rounded-lg border px-3 py-1 text-sm font-semibold no-underline hover:opacity-80 transition-opacity"
+            style={{
+              backgroundColor: "#F6F6F6",
+              color: "#E23067",
+              borderColor: "#DADADA",
+            }}
+          >
+            Manuel
+          </a>
+        </footer>
       </main>
     </div>
   );
