@@ -71,7 +71,7 @@ export default function Home() {
               borderColor: "#DADADA",
             }}
           >
-            Manuel
+            manuel 🥘
           </a>
         </footer>
       </main>
